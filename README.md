@@ -14,8 +14,8 @@ This project is a simple student management system written in C. It allows users
 
 ## Getting Started
 
-1. Compile the program using a C compiler (e.g., `gcc -o student_management student_management.c`).
-2. Run the executable (`./student_management`).
+1. Compile the program using a C compiler (e.g., `gcc -o studentmanagement studentmanagement.c`).
+2. Run the executable (`./studentmanagement`).
 3. Follow the on-screen menu to perform various tasks.
 
 ## Usage
