@@ -235,11 +235,6 @@ void save_to_file() {
 int main() {
     students = (struct StudentInfo **)malloc(max_students * sizeof(struct StudentInfo *));
 
-    if (students == NULL) {
-        printf("Memory allocation failed. Exiting.\n");
-        exit(EXIT_FAILURE);
-    }
-
     int choice;
     while (1) {
         printf("The Task that you want to perform\n");
@@ -274,11 +269,6 @@ int main() {
                 break;
             case 7:
                 save_to_file();
-                // Free memory allocated for the array of students
-                for (int i = 0; i < num_students; i++) {
-                    free(students[i]->cid);
-                    free(students[i]);
-                }
                 free(students);
                 exit(0);
             default:
